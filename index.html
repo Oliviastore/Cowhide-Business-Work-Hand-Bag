@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cowhide Business Work Hand Bag - Tas Kerja Premium untuk Wanita Modern</title>
+    <style>
+        :root {
+            --primary: #0F4C81; /* Classic Blue */
+            --secondary: #D4AF37; /* Gold */
+            --light: #F8F9FA;
+            --dark: #212529;
+            --danger: #DC3545;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .cta-button {
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #c9a227;
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a6fc9 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .price-tag {
+            background-color: var(--secondary);
+            color: var(--dark);
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            font-size: 20px;
+            color: #ccc;
+            margin-right: 15px;
+        }
+        
+        .countdown {
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 30px auto;
+        }
+        
+        .countdown h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .countdown-box {
+            background-color: rgba(0,0,0,0.3);
+            padding: 10px;
+            border-radius: 5px;
+            min-width: 70px;
+        }
+        
+        .countdown-number {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .countdown-label {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        
+        /* Product Showcase */
+        .product-showcase {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: var(--secondary);
+            bottom: -10px;
+            left: 25%;
+        }
+        
+        .product-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Features */
+        .features {
+            background-color: var(--light);
+            padding: 80px 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        
+        .author-name {
+            font-weight: 700;
+            margin: 0;
+        }
+        
+        .author-title {
+            color: #6c757d;
+            margin: 0;
+            font-size: 14px;
+        }
+        
+        /* FAQ */
+        .faq {
+            background-color: var(--light);
+            padding: 80px 0;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            background-color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: white;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        /* Guarantee */
+        .guarantee {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .guarantee-badge {
+            background-color: var(--secondary);
+            color: var(--dark);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            font-weight: 700;
+            font-size: 18px;
+            transform: rotate(-15deg);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a6fc9 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .cta-primary {
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        
+        .cta-primary:hover {
+            background-color: #c9a227;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        
+        .cta-secondary:hover {
+            background-color: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            color: var(--secondary);
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-link {
+            color: white;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        
+        .social-link:hover {
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px;
+        }
+        
+        /* Popup */
+        .popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+            padding: 20px;
+            max-width: 350px;
+            transform: translateY(150%);
+            transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            z-index: 1001;
+        }
+        
+        .popup.show {
+            transform: translateY(0);
+        }
+        
+        .popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .popup-close {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #6c757d;
+        }
+        
+        .popup-body {
+            display: flex;
+            align-items: center;
+        }
+        
+        .popup-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        
+        .popup-text {
+            font-size: 14px;
+        }
+        
+        .popup-name {
+            font-weight: 700;
+            margin: 0;
+        }
+        
+        .popup-message {
+            margin: 5px 0 0;
+            color: #6c757d;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-primary, .cta-secondary {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">LUXE<span>BAGS</span></a>
+            <a href="#order" class="cta-button">PESAN SEKARANG</a>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Cowhide Business Work Hand Bag</h1>
+            <p>Tas kerja premium yang memadukan gaya trendy modern dengan elegan mewah untuk wanita karir yang berkelas</p>
+            
+            <div class="price-tag">
+                <span class="original-price">Rp398.000</span>
+                <span>Rp199.000</span>
+            </div>
+            
+            <div class="countdown">
+                <h3>PENAWARAN TERBATAS!</h3>
+                <p>Harga promo berakhir dalam:</p>
+                <div class="countdown-timer">
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="hours">12</div>
+                        <div class="countdown-label">Jam</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="minutes">45</div>
+                        <div class="countdown-label">Menit</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="seconds">30</div>
+                        <div class="countdown-label">Detik</div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#order" class="cta-button">DAPATKAN DISKON 50%</a>
+        </div>
+    </section>
+    
+    <!-- Product Showcase -->
+    <section class="product-showcase">
+        <div class="container">
+            <h2 class="section-title">Tas Kerja Premium untuk Wanita Modern</h2>
+            
+            <div class="product-gallery">
+                <div class="gallery-item">
+                    <img src="https://cdn.orderonline.id/uploads/images_4542631750832483635.png" alt="Cowhide Business Work Hand Bag - Tampak Depan">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.orderonline.id/uploads/images_5456901750832483165.png" alt="Cowhide Business Work Hand Bag - Tampak Samping">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.orderonline.id/uploads/images_2176551750832483961.png" alt="Cowhide Business Work Hand Bag - Detail Bahan">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.orderonline.id/uploads/images_1504791750832485646.png" alt="Cowhide Business Work Hand Bag - Tampak Atas">
+                </div>
+            </div>
+            
+            <p>Tas kerja ini dirancang khusus untuk wanita profesional yang mengutamakan gaya dan fungsionalitas. Dibuat dari bahan cowhide asli yang tahan lama dengan sentuhan akhir yang mewah, tas ini akan menemani Anda dalam setiap kesempatan bisnis maupun acara formal.</p>
+        </div>
+    </section>
+    
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Keunggulan Produk</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Bahan Premium</h3>
+                    <p>Terbuat dari cowhide asli berkualitas tinggi yang tahan lama dan semakin indah seiring waktu.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Fungsional</h3>
+                    <p>Desain ruang yang luas dengan kompartemen khusus untuk laptop, dokumen, dan perlengkapan kerja.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Elegan & Mewah</h3>
+                    <p>Detail logam emas dan jahitan presisi memberikan kesan mewah dan profesional.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Multi-fungsi</h3>
+                    <p>Cocok untuk ke kantor, meeting bisnis, atau bahkan acara formal lainnya.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Keamanan</h3>
+                    <p>Dilengkapi dengan resleting berkualitas tinggi dan pengait yang aman.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Kemasan Eksklusif</h3>
+                    <p>Dikirim dengan kemasan premium siap hadiah, termasuk dust bag pelindung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Apa Kata Pelanggan Kami?</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Tas ini benar-benar mengubah penampilan profesional saya. Bahan sangat premium dan desainnya sangat fungsional. Sudah 3 bulan digunakan dan masih terlihat seperti baru!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Dian Sastro" class="author-avatar">
+                        <div>
+                            <p class="author-name">Dian Sastro</p>
+                            <p class="author-title">Marketing Director</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Saya sering mendapat pujian ketika membawa tas ini ke meeting. Tidak hanya cantik tetapi juga sangat praktis. Kompartemennya sangat terorganisir untuk semua kebutuhan kerja saya."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Rina Gunawan" class="author-avatar">
+                        <div>
+                            <p class="author-name">Rina Gunawan</p>
+                            <p class="author-title">Financial Consultant</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Sebagai pengusaha, saya butuh tas yang bisa mewakili profesionalisme saya. Tas ini melampaui ekspektasi! Pelayanannya juga cepat dan kemasannya sangat premium."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Maya Indah" class="author-avatar">
+                        <div>
+                            <p class="author-name">Maya Indah</p>
+                            <p class="author-title">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Model -->
+    <section class="product-showcase">
+        <div class="container">
+            <h2 class="section-title">Penampilan Nyata di Berbagai Kesempatan</h2>
+            
+            <div class="product-gallery">
+                <div class="gallery-item">
+                    <img src="https://i.ebayimg.com/00/s/MTI5M1g3OTA=/z/5bkAAOSw8l9mbD0P/$_10.JPG?set_id=880000500F" alt="Model menggunakan Cowhide Business Work Hand Bag">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ebayimg.com/00/s/MTAwMFg3NTA=/z/Og8AAOSw3pZmbD0H/$_10.JPG?set_id=880000500F" alt="Cowhide Business Work Hand Bag di acara formal">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://ae01.alicdn.com/kf/S8c5e9191a63047e3b30a4917797b55d4v.jpg?width=790&height=1062&hash=1852" alt="Detail kompartemen tas">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://ae01.alicdn.com/kf/Scf2d57cf50a74030a418ad46aa1634c1R.jpg?width=790&height=822&hash=1612" alt="Tas dengan berbagai perlengkapan kerja">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah bahan tas ini benar-benar dari cowhide asli?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, tas ini dibuat dari 100% cowhide asli berkualitas premium. Kami menggunakan bagian terbaik dari kulit sapi yang telah melalui proses penyamakan khusus untuk memastikan daya tahan dan keindahannya.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Berapa ukuran laptop yang bisa dimuat dalam tas ini?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tas ini memiliki kompartemen laptop khusus yang dapat menampung laptop hingga ukuran 15.6 inci dengan aman. Kompartemen ini dilapisi bahan lembut untuk melindungi perangkat Anda.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bagaimana cara perawatan tas ini?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kami menyertakan panduan perawatan khusus dengan setiap pembelian. Secara umum, cukup bersihkan dengan kain lembut yang sedikit lembab. Hindarkan dari air berlebihan dan simpan dalam dust bag yang kami sediakan ketika tidak digunakan.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Berapa lama waktu pengiriman?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kami memproses pesanan dalam 1-2 hari kerja. Pengiriman reguler membutuhkan waktu 3-5 hari kerja, sedangkan ekspres 1-2 hari kerja setelah pemrosesan. Kami akan memberikan nomor resi untuk melacak pengiriman Anda.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah ada garansi untuk produk ini?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kami memberikan garansi 1 tahun terhadap cacat produksi. Jika ada masalah, silakan hubungi tim dukungan kami dengan menyertakan foto dan deskripsi masalahnya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Guarantee -->
+    <section class="guarantee">
+        <div class="container">
+            <div class="guarantee-badge">
+                100%<br>KEPUASAN
+            </div>
+            <h2>Jaminan Kepuasan 100%</h2>
+            <p>Kami begitu yakin dengan kualitas produk kami sehingga kami menawarkan jaminan uang kembali 30 hari jika Anda tidak sepenuhnya puas dengan pembelian Anda. Tidak ada pertanyaan yang diajukan, tidak ada risiko bagi Anda.</p>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section" id="order">
+        <div class="container">
+            <h2>Jadilah Wanita Profesional yang Lebih Percaya Diri</h2>
+            <p>Dapatkan Cowhide Business Work Hand Bag sekarang dengan harga spesial sebelum kehabisan!</p>
+            
+            <div class="price-tag">
+                <span class="original-price">Rp398.000</span>
+                <span>Rp199.000</span>
+            </div>
+            
+            <div class="countdown-timer" style="justify-content: center; margin: 30px 0;">
+                <div class="countdown-box">
+                    <div class="countdown-number" id="cta-hours">12</div>
+                    <div class="countdown-label">Jam</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number" id="cta-minutes">45</div>
+                    <div class="countdown-label">Menit</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number" id="cta-seconds">30</div>
+                    <div class="countdown-label">Detik</div>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="https://rara.orderonline.id/cowhide-business-work-hand-bag" class="cta-primary">PESAN SEKARANG</a>
+                <a href="#features" class="cta-secondary">LIHAT DETAIL</a>
+            </div>
+            
+            <p style="margin-top: 30px; font-size: 14px;">*Harga promo terbatas hanya untuk 50 pembeli pertama hari ini</p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Tentang Kami</h3>
+                    <p>LUXEBAGS adalah merek aksesoris premium untuk wanita profesional yang mengutamakan kualitas, gaya, dan fungsionalitas dalam setiap produk kami.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Kontak</h3>
+                    <p><i class="fas fa-envelope"></i> cs@luxebags.id</p>
+                    <p><i class="fas fa-phone"></i> +62 21 1234 5678</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Follow Kami</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 LUXEBAGS. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-header">
+            <h4>Pemberitahuan Terbaru</h4>
+            <button class="popup-close">&times;</button>
+        </div>
+        <div class="popup-body">
+            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Sarah" class="popup-avatar">
+            <div class="popup-text">
+                <p class="popup-name">Sarah dari Bandung</p>
+                <p class="popup-message">Baru saja memesan 2 Cowhide Business Work Hand Bag!</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            document.getElementById('cta-hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('cta-minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('cta-seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                item.classList.toggle('active');
+                
+                const icon = question.querySelector('i');
+                if (item.classList.contains('active')) {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+        
+        // Popup
+        setTimeout(() => {
+            document.getElementById('popup').classList.add('show');
+        }, 10000);
+        
+        document.querySelector('.popup-close').addEventListener('click', () => {
+            document.getElementById('popup').classList.remove('show');
+        });
+        
+        // Random popup messages
+        const customers = [
+            { name: "Dewi dari Surabaya", message: "Baru saja memesan Cowhide Business Work Hand Bag!" },
+            { name: "Rina dari Jakarta", message: "Baru saja memberikan ulasan 5 bintang untuk tas ini!" },
+            { name: "Siti dari Bandung", message: "Baru saja menyelesaikan pembayaran untuk 2 tas!" },
+            { name: "Linda dari Medan", message: "Baru saja menambahkan produk ini ke keranjang!" }
+        ];
+        
+        setInterval(() => {
+            if (document.getElementById('popup').classList.contains('show')) {
+                const randomCustomer = customers[Math.floor(Math.random() * customers.length)];
+                document.querySelector('.popup-name').textContent = randomCustomer.name;
+                document.querySelector('.popup-message').textContent = randomCustomer.message;
+                document.querySelector('.popup-avatar').src = `https://randomuser.me/api/portraits/women/${Math.floor(Math.random() * 70) + 20}.jpg`;
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
